@@ -1,0 +1,25 @@
+.header {
+  height: 50px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-header {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  padding-left: 15px;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: auto;
+  height: 80%;
+}

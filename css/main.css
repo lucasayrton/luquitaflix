@@ -1,3 +1,5 @@
+@import '../assets/fonts/netflix/stylesheet.css';
+
 .globalstyle {
   margin: 0;
   padding: 0;
@@ -6,7 +8,7 @@
   height: 100%;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  font-family: 'Netflix Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'netflix_sanslight', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #fff;
   background: #141414;
 }

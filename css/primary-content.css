@@ -1,0 +1,40 @@
+.container-featured-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8% 15% 0 15%;
+}
+
+.logo-primary-content {
+  width: 50%;
+  height: auto;
+}
+
+.content-button {
+  margin-left: 10px;
+  background: rgb(100, 100, 100, 0.5);
+  border: none;
+  border-radius: 3px;
+  padding: 10px 25px 10px 25px;
+	color: inherit;
+	font: inherit;
+	outline: inherit;
+  cursor: pointer;
+}
+
+.content-button:hover {
+  background: rgb(100, 100, 100, 0.7);
+}
+
+.container-description {
+  font-size: 22px;
+  text-shadow: 2px 2px 5px #000;
+}
+
+.mr-1 {
+  margin-right: 5px;
+}
+
+.w-1 {
+  width: 60%;
+}

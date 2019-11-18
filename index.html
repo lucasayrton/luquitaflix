@@ -9,6 +9,10 @@
   </head>
   <body class="globalstyle featured-image">
 
+    <video muted loop id="video-background" class="video-fadeOut">
+      <source src="" type="video/mp4">
+    </video>
+
     <div class="header">
       <div class="left-header">
         <img src="./assets/images/logo_luquitaflix.png" alt="logo-luquitaflix" class="logo">
@@ -17,6 +21,8 @@
         <button class="button-menu">Filmes</button>
       </div>
       <div class="right-header">
+        <button class="button-menu"><i class="fa fa-search"></i></button>
+        <button class="button-menu"><i class="fa fa-bell"></i></button>
         <button class="button-menu">Login</button>
       </div>
     </div>
@@ -34,6 +40,132 @@
         <p class="container-description">
           Ao saber que tem câncer, um professor passa a fabricar metanfetamina pelo futuro da família, mudando o destino de todos.
         </p>
+      </div>
+    </div>
+
+    <div>
+      <p class="title-carousel">Minha lista</p>
+      <div class="contain">
+        <button id="slideLeft" type="button" class="arrow-button arrow-slider-left" onclick="slideLeft()">
+          <i class="fa fa-chevron-left"></i>
+        </button>
+        <div class="row" id="slide">
+          <div class="row__inner">
+
+            <div class="tile first-tile">
+              <div class="tile__media">
+                <img class="tile__img" src="./assets/images/avengers-end-game.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Vingadores: Ultimato
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="./assets/images/as-branquelas.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  As Branquelas
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-4.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-5.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-6.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-7.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-8.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+
+            <div class="tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-9.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+      
+            <div class="tile last-tile">
+              <div class="tile__media">
+                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-17.jpg" alt="" />
+              </div>
+              <div class="tile__details">
+                <div class="tile__title">
+                  Top Gear
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button id="slideRight" type="button" class="arrow-button arrow-slider-right" onclick="slideRight()">
+          <i class="fa fa-chevron-right"></i>
+        </button>
       </div>
     </div>
   </body>

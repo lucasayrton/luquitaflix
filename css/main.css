@@ -33,7 +33,7 @@ html, body {
   scroll-behavior: smooth;
 }
 
-#video-background {
+#videoBackground {
   position: fixed; 
   right: 0; 
   bottom: 0;

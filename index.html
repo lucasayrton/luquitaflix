@@ -2,15 +2,16 @@
 <html lang="pt-br">
   <head>
     <title>Luquitaflix</title>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta name="description" content="Landing Page Netflix">
+    <meta name="author" content="Lucas Ayrton">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="stylesheet" href="./assets/font-awesome-4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="./js/main.js"></script>
   </head>
   <body class="globalstyle featured-image">
-
-    <video muted loop id="video-background" class="video-fadeOut">
-      <source src="" type="video/mp4">
+    <video muted loop id="videoBackground" class="video-fadeOut">
+      <source src="./assets/videos/breaking-bad-trailer.mp4" type="video/mp4">
     </video>
 
     <div class="header">
@@ -21,8 +22,8 @@
         <button class="button-menu">Filmes</button>
       </div>
       <div class="right-header">
-        <button class="button-menu"><i class="fa fa-search"></i></button>
-        <button class="button-menu"><i class="fa fa-bell"></i></button>
+        <button class="button-menu"><span aria-hidden="true" class="fa fa-search"></span></button>
+        <button class="button-menu"><span aria-hidden="true" class="fa fa-bell"></span></button>
         <button class="button-menu">Login</button>
       </div>
     </div>
@@ -32,9 +33,9 @@
         <img src="./assets/images/logo-breaking-bad.png" alt="logo-breaking-bad" class="logo-primary-content">
       </div>
       <div>
-        <button class="content-button"><i class="fa fa-play mr-1"></i> Assistir</button>
-        <button class="content-button"><i class="fa fa-plus mr-1"></i> Minha lista</button>
-        <button class="content-button"><i class="fa fa-info-circle mr-1"></i> Mais informações</button>
+        <button class="content-button"><span aria-hidden="true" class="fa fa-play mr-1"></span> Assistir</button>
+        <button class="content-button"><span aria-hidden="true" class="fa fa-plus mr-1"></span> Minha lista</button>
+        <button class="content-button"><span aria-hidden="true" class="fa fa-info-circle mr-1"></span> Mais informações</button>
       </div>
       <div class="w-1">
         <p class="container-description">
@@ -47,116 +48,116 @@
       <p class="title-carousel">Minha lista</p>
       <div class="contain">
         <button id="slideLeft" type="button" class="arrow-button arrow-slider-left" onclick="slideLeft()">
-          <i class="fa fa-chevron-left"></i>
+          <span aria-hidden="true" class="fa fa-chevron-left"></span>
         </button>
         <div class="row" id="slide">
-          <div class="row__inner">
+          <div class="row-inner">
 
             <div class="tile first-tile">
-              <div class="tile__media">
-                <img class="tile__img" src="./assets/images/avengers-end-game.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="./assets/images/avengers-end-game.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
+              <div class="tile-details">
+                <div class="tile-title">
                   Vingadores: Ultimato
                 </div>
               </div>
             </div>
 
             <div class="tile">
-              <div class="tile__media">
-                <img class="tile__img" src="./assets/images/as-branquelas.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="./assets/images/as-branquelas.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
+              <div class="tile-details">
+                <div class="tile-title">
                   As Branquelas
                 </div>
               </div>
             </div>
 
             <div class="tile">
-              <div class="tile__media">
-                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-3.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="./assets/images/thor-ragnarok.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
-                  Top Gear
+              <div class="tile-details">
+                <div class="tile-title">
+                  Thor Ragnarok
                 </div>
               </div>
             </div>
 
             <div class="tile">
-              <div class="tile__media">
-                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-4.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="./assets/images/iron-man.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
-                  Top Gear
+              <div class="tile-details">
+                <div class="tile-title">
+                  Iron Man
                 </div>
               </div>
             </div>
 
             <div class="tile">
-              <div class="tile__media">
-                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-5.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="./assets/images/game-of-thrones.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
-                  Top Gear
+              <div class="tile-details">
+                <div class="tile-title">
+                  Game of Thrones
                 </div>
               </div>
             </div>
 
             <div class="tile">
-              <div class="tile__media">
-                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-6.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="./assets/images/dragon-ball-super.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
-                  Top Gear
+              <div class="tile-details">
+                <div class="tile-title">
+                  Dragon Ball Super
                 </div>
               </div>
             </div>
 
             <div class="tile">
-              <div class="tile__media">
-                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-7.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="./assets/images/zumbilandia.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
-                  Top Gear
+              <div class="tile-details">
+                <div class="tile-title">
+                  Zumbilândia
                 </div>
               </div>
             </div>
 
             <div class="tile">
-              <div class="tile__media">
-                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-8.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="./assets/images/sword-art-online.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
-                  Top Gear
+              <div class="tile-details">
+                <div class="tile-title">
+                  Sword Art Online
                 </div>
               </div>
             </div>
 
             <div class="tile">
-              <div class="tile__media">
-                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-9.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-9.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
+              <div class="tile-details">
+                <div class="tile-title">
                   Top Gear
                 </div>
               </div>
             </div>
       
             <div class="tile last-tile">
-              <div class="tile__media">
-                <img class="tile__img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-17.jpg" alt="" />
+              <div class="tile-media">
+                <img class="tile-img" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/70390/show-17.jpg" alt="" />
               </div>
-              <div class="tile__details">
-                <div class="tile__title">
+              <div class="tile-details">
+                <div class="tile-title">
                   Top Gear
                 </div>
               </div>
@@ -164,9 +165,11 @@
           </div>
         </div>
         <button id="slideRight" type="button" class="arrow-button arrow-slider-right" onclick="slideRight()">
-          <i class="fa fa-chevron-right"></i>
+          <span aria-hidden="true" class="fa fa-chevron-right"></span>
         </button>
       </div>
     </div>
+
+    <script type="text/javascript" src="./js/main.js"></script>
   </body>
 </html>

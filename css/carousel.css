@@ -20,17 +20,17 @@ a:hover {
 }
 
 .row {
-	overflow: scroll;
+	overflow: hidden;
   width: 100%;
   position: absolute;
-  z-index: 1;
+	z-index: 1;
 }
 
 ::-webkit-scrollbar {
   display: none;
 }
 
-.row__inner {
+.row-inner {
 	transition: 450ms transform;
 	font-size: 0;
 	white-space: nowrap;
@@ -58,13 +58,13 @@ a:hover {
   margin-right: 70px;
 }
 
-.tile__img {
+.tile-img {
 	width: 250px;
 	height: 140.625px;
 	object-fit: cover;
 }
 
-.tile__details {
+.tile-details {
 	position: absolute;
 	bottom: 0;
 	left: 0;
@@ -76,8 +76,8 @@ a:hover {
 	transition: 450ms opacity;
 }
 
-.tile__details:after,
-.tile__details:before {
+.tile-details:after,
+.tile-details:before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -85,7 +85,7 @@ a:hover {
 	display: #000;
 }
 
-.tile__details:after {
+.tile-details:after {
 	margin-top: -25px;
 	margin-left: -25px;
 	width: 50px;
@@ -98,7 +98,7 @@ a:hover {
 	z-index: 1;
 }
 
-.tile__details:before {
+.tile-details:before {
 	content: '▶';
 	left: 0;
 	width: 100%;
@@ -109,25 +109,25 @@ a:hover {
 	z-index: 2;
 }
 
-.tile:hover .tile__details {
+.tile:hover .tile-details {
 	opacity: 1;
 }
 
-.tile__title {
+.tile-title {
 	position: absolute;
 	bottom: 0;
 	padding: 10px;
 }
 
-.row__inner:hover {
+.row-inner:hover {
 	transform: translate3d(-62.5px, 0, 0);
 }
 
-.row__inner:hover .tile {
+.row-inner:hover .tile {
 	opacity: 0.3;
 }
 
-.row__inner:hover .tile:hover {
+.row-inner:hover .tile:hover {
 	transform: scale(1.5);
 	opacity: 1;
 }

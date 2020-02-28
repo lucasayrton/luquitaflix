@@ -34,3 +34,12 @@
   width: auto;
   height: 80%;
 }
+
+.user-avatar {
+  width: 35px;
+  height: 35px;
+}
+
+.arrow-menu {
+  margin-left: 5px;
+}

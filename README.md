@@ -44,15 +44,18 @@ Caso haja alguma dúvida poderá ser aberto uma issue no github.
 
 1. Explique com suas palavras a diferença entre a utilização de var, const e let?
 
+R: Uma variável var ela corresponde ao escopo global e local, já a let corresponde a esses dois porém ao escopo de bloco também, isso quer dizer que ao criar um let dentro de um bloco essa variável não poderá ser utilizada fora do bloco (podendo ser um método, por exemplo).
+Já a const equivale ao let em relação ao escopo, porém a variável será uma constante, então após inicializar ela não iremos conseguir alterar seu valor, para fazer isso é necessário utilizar o let.
+
 ---
 
 2. Assinale a(s) diferença(s) entre Funções normais e Arrow Functions?
 
  - [ ] Funções normais não guardam escopo  
- - [ ] Funções normais guardam escopo  
+ - [x] Funções normais guardam escopo  
  - [ ] Arrow function são mais rápidas  
  - [ ] Arrow function podem ser instanciadas  
- - [ ] Arrow function não guardam escopo  
+ - [x] Arrow function não guardam escopo  
 
 ---
 
@@ -77,7 +80,7 @@ const name = userData.getName()
 ```
  - [ ] John
  - [ ] Luke
- - [ ] James
+ - [x] James
  - [ ] Walter
 
 ---
@@ -106,7 +109,7 @@ event.getTitle()
 
 ```
 
- - [ ] The event 04/02/2019 will take place on Event Test
+ - [x] The event 04/02/2019 will take place on Event Test
  - [ ] The event undefined will take place on undefined
  - [ ] Uncaught TypeError
  - [ ] The event null will take place on null
@@ -115,17 +118,43 @@ event.getTitle()
 
 5. Quais são as formas de selecionar um elemento na DOM e qual a diferença entre elas?
 
+R:  
+- getElementById (Seleciona um elemento pelo ID)  
+- getElementsByClassName (Seleciona um elemento pela classe)  
+- getElementsByName (Seleciona um elemento pelo nome)  
+- getElementsByTagName (Seleciona um elemento pela tag HTML)  
+- querySelector (Permite a seleção por classe, id ou atributos)  
+
 ---
 
 6. Como inserir um evento em determinado elemento?
+
+R: Utilizando o addEventListener
 
 ---
 
 7. Como remover um evento em determinado elemento?
 
+R: Utilizando o removeEventListener
+
 ---
 
 8. Descreva com suas palavras o que é event bubbling?
+
+R: É um evento que é executado de forma hierárquica desde o elemento acionado até o topo.  
+No exemplo abaixo se clicar no Filho será apresentado o alerta do Filho > Pai > Vô.
+
+```javascript
+<div onClick="alert('Vô')">
+  Vô
+  <div onClick="alert('Pai')">
+    Pai
+    <div onClick="alert('Filho')">
+      Filho
+    </div>
+  </div>
+</div>
+```
 
 ---
 
@@ -137,6 +166,10 @@ const object = new Object()
 const object = Object.create()
 ```
 
+R:  
+- ```{}``` Cria um objeto literal;
+- ```new Object()``` Instancia um objeto e executa código do construtor;
+- ```Object.create()``` Instancia um objeto porém não executa código do construtor;
 ---
 
 10. Qual a diferença no uso de XMLHttpRequest e Fetch ? E qual devemos usar atualmente ?

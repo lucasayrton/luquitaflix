@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  padding: 5px;
+  background-image: linear-gradient(rgba(255,0,0,0) ,#000);
+  
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}

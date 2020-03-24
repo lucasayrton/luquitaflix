@@ -12,14 +12,15 @@ A página pode ser do tema que o candidato preferir, devendo apenas seguir e a m
 
 Requisitos:
 
-- Header com logo da aplicação, itens do menu e item de menu do usuário (avatar). O Header deve ter fundo transparente quando o scroll da página estiver no topo e alterar para um fundo opaco quando for realizado o 	scroll
--   Um item principal em destaque
--   Listagem dos itens organizados em Carrossel
--   Footer contendo informações do desenvolvedor
+- [x] Header com logo da aplicação, itens do menu e item de menu do usuário (avatar). O Header deve ter fundo transparente quando o scroll da página estiver no topo e alterar para um fundo opaco quando for realizado o 	scroll
+- [x] Um item principal em destaque
+- [x] Listagem dos itens organizados em Carrossel
+- [x] Footer contendo informações do desenvolvedor
+- [x] Layout responsivo para as resoluções mais utilizadas (Ex: 1366x768, 360x640, 768x1024)
 
-![Netflix](https://github.com/db1group/mestre-dos-codigos/raw/master/docs/img/netflix.png)
+![Netflix](img/netflix.png)
 
-![Youtube Music](https://github.com/db1group/mestre-dos-codigos/raw/master/docs/img/yt-music.png)
+![Youtube Music](img/yt-music.png)
 
 Será avaliado:
 
@@ -169,46 +170,94 @@ const object = Object.create()
 R:  
 - ```{}``` Cria um objeto literal;
 - ```new Object()``` Instancia um objeto e executa código do construtor;
-- ```Object.create()``` Instancia um objeto porém não executa código do construtor;
+- ```Object.create()``` Instancia um objeto porém não executa código do construtor.
 ---
 
 10. Qual a diferença no uso de XMLHttpRequest e Fetch ? E qual devemos usar atualmente ?
+
+R: Fetch é uma API mais nova, com ela podemos fazer requisições mais simples do que com o XMLHttpRequest, além disso é possível:
+- Guardar cache das requisições e respostas;
+- Fazer requisições no-cors, onde não é necessário estar implementado o CORS na aplicação back-end.
+
+Porém muitas pessoas recomendam a utilização do XMLHttpRequest ainda, por o Fetch ainda não dar o total suporte de funcionalidades que temos no XHR.
 
 ---
 
 11. O que são Promises ? Como podemos declarar uma promise em javascript ?
 
+R: Promise é um objeto usado para processamento assíncrono.
+Exemplo de criação de uma promise:
+
+```javascript
+new Promise(function(resolve, reject) { ... });
+```
+
 ---
 
 12. Liste 3 formas de iterar um Array em javascript e explique a diferença entre cada um deles?
 
+R:
+- ```for```: Um laço for é repetido até que a condição especificada seja falsa, sempre é iniciado uma variável que podemos somar ou subtrair o valor dela para percorrermos por um array através do seu index.
+- ```while```: Uma declaração while executa suas instruções, desde que uma condição especificada seja avaliada como verdadeira.
+- ```do...while```: A instrução será repetida até que a condição seja falsa, porém nesse caso sempre será executada a primeira vez.
 ---
 
 13. Quando utilizar map, reduce ou filter ?
 
+R:
+- ```map```: Ele percorre por todo o array criando um novo array com elementos alterados conforme a função passada;
+- ```reduce```: Utilizada quando é necessário somar um certo elemento de um array, retornando um único valor;
+- ```filter```: Utilizada para filtrar items de um array de acordo com o teste que é passado para o método.
 ---
 
 14. Qual o método do Array é mais indicado para remover elementos ?
+
+R: ```.splice()```
 
 ---
 
 15. Cite 4 métodos presentes na API de strings do Javascript e explique cada um deles;
 
+R:
+- ```.trim()```: Ele retorna a string sem os espaços em branco do ínicio e do fim da string;
+- ```.replace()```: Retorna uma nova string com algum ou todas as combinações do padrão substituído por um substituto;
+- ```.toLowerCase()```: Retorna o valor da string convertido em minúsculas;
+- ```.split()```: Separa uma String em um array de strings separando a string em substrings.
+
 ---
 
 16. Escreva um código para inserir e resgatar items do LocalStorage/SessionStorage
+
+R:
+```javascript
+localStorage.setItem('nomeUsuarioLocal', 'Lucas Ayrton');
+sessionStorage.setItem('nomeUsuarioSession', 'Lucas Ayrton');
+
+console.log('Local Storage: ', localStorage.getItem('nomeUsuarioLocal'))
+console.log('Session Storage: ', sessionStorage.getItem('nomeUsuarioSession'))
+```
 
 ---
 
 17. Qual a melhor forma para definir um cookie utilizando javascript ?
 
+R: Utilizando o ```document.cookie```.
+Exemplo para criar um cookie:
+```javascript
+document.cookie = "username=Luacs Ayrton; expires=Thu, 25 Dec 2020 12:00:00 UTC; path=/";
+```
+
 ---
 
 18. Quais os tipos de Loops existentes em javascript ?
 
+R: for, for...in, for...of, while, do...while.
+
 ---
 
 19. Descreva com suas palavras o que é hoisting ?
+
+R: É um comportamento que durante a fase de compilação do seu código as declarações de variáveis e funções são colocadas no topo do seu código.
 
 ---
 
@@ -216,14 +265,14 @@ R:
 
  - [ ] window
  - [ ] global
- - [ ] undefined
+ - [x] undefined
  - [ ] null
 
 ---
 
 21. Quando eu posso utilizar o "Use-strict" no meu código ?
 
- - [ ] No ínicio do meu código
+ - [x] No ínicio do meu código
  - [ ] No inicio do block if
  - [ ] No inicio de um loop
- - [ ] no inicio de uma função
+ - [x] no inicio de uma função

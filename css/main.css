@@ -3,6 +3,7 @@
 @import './header.css';
 @import './primary-content.css';
 @import './carousel.css';
+@import './footer.css';
 
 .globalstyle {
   margin: 0;

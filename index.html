@@ -18,18 +18,57 @@
     <div class="header">
       <div class="left-header">
         <img src="./assets/images/logo_luquitaflix.png" alt="logo-luquitaflix" class="logo">
-        <button class="button-menu">Home</button>
-        <button class="button-menu">Séries</button>
-        <button class="button-menu">Filmes</button>
+        <div class="menu-left-large">
+          <button class="button-menu">Home</button>
+          <button class="button-menu">Séries</button>
+          <button class="button-menu">Filmes</button>
+        </div>
+        <div class="menu-left-small">
+          <div class="dropdown">
+            <button class="button-menu">
+              Navegar
+              <span aria-hidden="true" class="fa fa-sort-desc arrow-menu"></span>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Home</a>
+              <a href="#">Séries</a>
+              <a href="#">Filmes</a>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="right-header">
-        <button class="button-menu"><span aria-hidden="true" class="fa fa-search"></span></button>
-        <button class="button-menu">Ayrton</button>
-        <button class="button-menu"><span aria-hidden="true" class="fa fa-bell"></span></button>
-        <button class="button-menu left-header">
-          <img src="./assets/images/avatar.png" alt="user-avatar" class="user-avatar">
-          <span aria-hidden="true" class="fa fa-sort-desc arrow-menu"></span>
-        </button>
+        <div class="menu-right-large">
+          <button class="button-menu"><span aria-hidden="true" class="fa fa-search"></span></button>
+          <button class="button-menu">Ayrton</button>
+          <button class="button-menu"><span aria-hidden="true" class="fa fa-bell"></span></button>
+          <div class="dropdown">
+            <button class="button-menu left-header">
+              <img src="./assets/images/avatar.png" alt="user-avatar" class="user-avatar">
+              <span aria-hidden="true" class="fa fa-sort-desc arrow-menu"></span>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Conta</a>
+              <a href="#">Ajuda</a>
+              <a href="#">Sair</a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-right-small">
+          <button class="button-menu"><span aria-hidden="true" class="fa fa-search"></span></button>
+          <button class="button-menu"><span aria-hidden="true" class="fa fa-bell"></span></button>
+          <div class="dropdown">
+            <button class="button-menu left-header">
+              <img src="./assets/images/avatar.png" alt="user-avatar" class="user-avatar">
+              <span aria-hidden="true" class="fa fa-sort-desc arrow-menu"></span>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">Conta</a>
+              <a href="#">Ajuda</a>
+              <a href="#">Sair</a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -173,6 +212,10 @@
           <span aria-hidden="true" class="fa fa-chevron-right"></span>
         </button>
       </div>
+    </div>
+
+    <div class="footer">
+      <a href="https://github.com/lucasayrton" target="_blank">Desenvolvido por Lucas Ayrton</a>
     </div>
 
     <script type="text/javascript" src="./js/main.js"></script>

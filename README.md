@@ -18,9 +18,9 @@ Requisitos:
 - [x] Footer contendo informações do desenvolvedor
 - [x] Layout responsivo para as resoluções mais utilizadas (Ex: 1366x768, 360x640, 768x1024)
 
-![Netflix](img/netflix.png)
+![Netflix](./assets/images/netflix.png)
 
-![Youtube Music](img/yt-music.png)
+![Youtube Music](./assets/images/yt-music.png)
 
 Será avaliado:
 
